@@ -1,5 +1,4 @@
 public class EntryValue {
-    //before i knew that csv do exist...
     int x;
     public int setValue(char mStringA, char mStringB) {
         if (mStringA == 'C') {
