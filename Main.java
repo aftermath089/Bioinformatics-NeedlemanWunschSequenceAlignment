@@ -1,15 +1,14 @@
 import java.util.LinkedList;
-import java.util.Scanner;
 
-class Main extends EntryValue {
-
+class Main extends BlosumScore {
+    
     public static void main(String[] args) {
         // INIT VAR,
         String String1, String2;
         int Length1, Length2;
         char[] Char1, Char2;
 
-        EntryValue setEntryValue = new EntryValue();
+        BlosumScore BlosumScore = new BlosumScore();
 
         // INPUT//
         String2 = "GCATGCU";
@@ -35,8 +34,8 @@ class Main extends EntryValue {
                     ArrayValue[i][j] = j - (i * 6);
                     ArrayTracing[i][j] = j - (i * 6);
                 } else {
-                    ArrayValue[i][j] = setEntryValue.setValue(Char1[i - 1], Char2[j - 1]);
-                    ArrayTracing[i][j] = setEntryValue.setValue(Char1[i - 1], Char2[j - 1]);
+                    ArrayValue[i][j] = BlosumScore.setValue(Char1[i - 1], Char2[j - 1]);
+                    ArrayTracing[i][j] = BlosumScore.setValue(Char1[i - 1], Char2[j - 1]);
 
                     if (Char1[i - 1] == Char2[j - 1]) {
                         ArrayFlag[i - 1][j - 1] = 1;
